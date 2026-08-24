@@ -46,7 +46,7 @@ concurrency:
 
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
     # GitHub Actionsの6時間上限に近づけず、地域単位で早期に失敗させる。
     timeout-minutes: 120
 
