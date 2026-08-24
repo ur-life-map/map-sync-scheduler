@@ -30,7 +30,7 @@ concurrency:
 
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
     timeout-minutes: 330
     env:
       OPS_API_URL: ${{ vars.OPS_API_URL || 'https://ur-life-map-ops-api-staging.ur-lifemap-admin.workers.dev' }}
